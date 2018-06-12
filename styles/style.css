@@ -1,0 +1,182 @@
+/* color pallette
+black - #454747
+cream - #efedee
+yellow - #e1b148
+white - #ffffff
+earth - #9e8c8c
+
+screen sizes
+phone: 0 - 600
+tablet: 600 - 900
+tablet landscape: 900 - 1000
+desktop: 1200 - 1800
+big desktop - 1800 - +
+*/
+
+/* -- Base Style -- */
+body {
+	background-color: #616161;
+	margin: 0px;
+	padding: 0px;
+}
+
+section {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	height: 100vh;
+	width: 100%;
+}
+
+.hero, .backstory {
+	background-size: cover;
+	align-items: flex-start;
+	text-align: end;
+}
+
+.behold {
+	background-color: #454747;
+}
+
+.item-1 {
+	background-color: #e1b148;
+}
+
+.contact {
+	background-color: #ffffff;
+}
+
+
+/* -- Font Style and Color -- */
+@font-face {
+	font-family: BebasNeueBold;
+	src: url('../fonts/bebasneue-bold.otf');
+}
+
+@font-face {
+	font-family: BebasNeueRegular;
+	src: url('../fonts/bebasneue-regular.otf');
+}
+
+h1, h2 {
+	color: #454747;
+	text-align: left;
+}
+
+h1 {
+	font-family: "BebasNeueBold", Helvetica, Arial, sans-serif;
+	margin: 0px;
+	padding: 0px;
+}
+
+h2 {
+	font-family: "BebasNeueRegular", Helvetica, Arial, sans-serif;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+.hero > h1 {
+	color: #454747; /*black*/
+}
+.hero > h2 {
+	color: #e1b148; /*yellow*/
+}
+.backstory > h1 {
+	color: #efedee; /*cream*/
+}
+.behold > h1 {
+	color: #e1b148; /*yellow*/
+}
+.behold > h2 {
+	color: #efedee; /*cream*/
+}
+
+
+/* -- Responsive -- */
+/* Desktop */
+@media screen and (min-width: 1200px) {
+	h1 {
+		font-size: 150px;
+	}
+
+	h2 {
+		font-size: 40px;
+	}
+	.behold > h1 {
+		font-size: 470px;
+	}
+
+	.hero {
+		background-image: url('../images/web/portfolio-site-v2.2-web-hero.jpg');
+	}
+	.backstory {
+		background-image: url('../images/web/portfolio-site-v2.2-web-backstory.jpg');
+	}
+	
+	.hero > h1, h2 {
+		margin-left: 50px;
+	}
+
+	.backstory > h1, h2 {
+		margin-left: 50px;
+	}
+	.backstory > h2 {
+		width: 500px;
+	}
+
+	.behold > h2 {
+		margin-top: 0px;
+		padding: 0px;
+	}
+	.behold > h1 {
+		margin: 0px;
+		padding: 0px;
+	}
+}
+
+/* Mobile */
+@media screen and (max-width: 599px) {
+	h1 {
+		font-size: 48px;
+	}
+
+	h2 {
+		font-size: 24px;
+	}
+	.behold > h1 {
+		font-size: 120px;
+	}
+
+	.hero {
+		background-image: url('../images/mobile/portfolio-site-v2.2-mobile-hero.jpg');
+	}
+	.backstory {
+		background-image: url('../images/mobile/portfolio-site-v2.2-mobile-backstory.jpg');
+	}
+	h1 {
+		font-size: 48px;
+	}
+	h2 {
+		font-size: 24px;
+	}
+
+}
+
+/* Tablet */
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+	.hero {
+		background-image: url('../images/tablet/portfolio-site-v2.2-tablet-hero.jpg');
+	}
+	.backstory {
+		background-image: url('../images/tablet/portfolio-site-v2.2-tablet-backstory.jpg');
+	}
+}
+
+
+
+
+
+
+
