@@ -24,18 +24,18 @@ h1 {
 	margin: 0px;
 	padding: 0px;
 }
-h2 {
+h2, p {
 	font-family: "BebasNeueRegular", Helvetica, Arial, sans-serif;
 	margin-top: 0px;
 	padding: 0px;
 }
 
 /* Color Black */
-#hero > .container > h1, #backstory > .container > h2, #item-1 > .container > h2, #contact > .container > h1 {
+#hero > .container > h1, #backstory > .container > h2, #item-1 > .container > h2, #contact > .container > h1, #contact > .container > p, a {
 	color: #454747; /*black*/
 }
 /* Yellow #e1b148 */
-#hero > .container > h2, #behold > .container > h1 {
+#hero > .container > h2, #behold > .container > h1, #contact > .container > p {
 	color: #e1b148;
 }
 /* Cream #efedee */
